@@ -9,6 +9,7 @@ sudo apt-get update
 sudo apt-get -y --force-yes upgrade
 
 # Install Packages
+sudo apt-get -y --force-yes install linux-headers-`uname -r` dkms
 sudo apt-get -y --force-yes install curl apache2 php5 php5-curl php-pear php5-gd imagemagick screen tmux vim curl git
 
 # install mysql and give password to installer
