@@ -3,7 +3,7 @@
 
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "debian/jessie64"
+  config.vm.box = "rgoldman/jessie-lamp"
   config.vm.hostname = "jessie-lamp"
   config.vm.network "private_network", ip: "192.168.33.22"
   config.vm.synced_folder "www/", "/var/www/html",
